@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll to Reveal</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .spacer {
+        height: 100vh; /* Creates scrollable space */
+        background: lightgray;
+      }
+
+      .hidden-div {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+
+      .hidden-div.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .scroll-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .trigger {
+        height: 1px;
+        background: transparent;
+      }
+    </style>
+    <body>
+      <div class="spacer">Scroll down to see the magic!</div>
+
+      <div id="reveal" class="hidden-div">
+        <div class="content">
+          Hello! I appear when you scroll to this section.
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+    </body>
+  </head>
+</html>

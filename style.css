@@ -5,7 +5,7 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 * {
-  border: rgb(255, 0, 0) 1px solid;
+  /* border: rgb(255, 0, 0) 1px solid; */
 }
 nav {
   display: flex;
@@ -57,7 +57,7 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-#ervin {
+#home {
   padding-right: 60px;
 }
 #almog {
@@ -88,25 +88,15 @@ main {
   background-color: white;
   width: 100%;
   height: 100vh;
-  border: red solid 1px;
+  /* border: red solid 1px; */
   position: relative;
-  top: 120vh;
+  top: 125vh;
   z-index: 4;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-#item1,
-#item2,
-#item3,
-#item4 {
-  width: 22vw;
-  height: 35vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
+
 #logo,
 #search,
 #bag,
@@ -137,16 +127,58 @@ main {
   color: black;
   font-size: 18px;
 }
+
+#item1,
+#item2,
+#item3,
+#item4 {
+  width: 22vw;
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#watch1,
+#watch2,
+#watch3,
+#watch4 {
+  width: 22vw;
+  height: 30vw;
+  display: block;
+  text-align: center;
+}
+header {
+  background-color: white;
+  width: 100%;
+  height: 10vh;
+  /* border: red solid 1px; */
+  position: relative;
+  top: 130vh;
+  z-index: 5;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around; */
+}
 footer {
   width: 100%;
-  height: 66vh;
+  height: 60vh;
   display: flex;
-  justify-content: left;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
   background: rgb(1, 58, 55);
   color: white;
+  position: relative;
+  top: 130vh;
+  border-top: black 6px solid;
 }
-#watch1 {
-  width: 100%;
-  height: 100%;
+#top-footer {
+  display: flex;
+}
+#top-footer div {
+  margin-left: 8vw;
+}
+#bottom-footer {
+  display: flex;
+  margin-left: 10vw;
 }
