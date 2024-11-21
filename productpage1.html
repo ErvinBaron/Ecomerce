@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styleproductpage.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@300..700&display=swap');
-    </style>
 </head>
-<body style="font-family: libre;">
+<body>
     <nav class="navbar">
         <div class="upper-nav">
         <div id="logo">
@@ -27,18 +24,32 @@
         </div>
   
         <div id="right-bar">
-          <div id="anim">
-            <input type="text" placeholder="search.." />
-            <i class="sea fancy-sea">
-              <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                  
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                  
-                  <g id="SVGRepo_iconCarrier"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
-                  
-                  </svg></i>
+          <div class="search-container">
+            <svg
+              class="search-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+      
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+      
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+            <input type="text" class="search-input" placeholder="Search..." />
           </div>
           <div id="bag">
               <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,15 +90,17 @@
             <div class="bottom"><img src="images/rolexsubmariner/Sub01-0.jpg" alt="pic2" id="pic2">
             <img src="images/rolexsubmariner/news89.jpg" alt="pic3" id="pic3"></div>
         </div>
-        <div class=" descripton">
+        <div class="descripton">
             <div>
-                <h1><b>Atlantis</b></h1>
-                <h2>Luxury Diving Watch</h2>
-                <p><b>12,399$</b></p>
+                <p id="item-header"><b>Atlantis</b></p>
+                <p id="item-des" >Luxury Diving Watch</p>
+                <p id="price"><b>12,399$</b></p>
                 <br>
-                <p><b>color </b><br>
-                    <input type="color" name="black" readonly>black <input type="color" id="blue" name="blue" readonly>blue</p>
-                <p><b>select size </b> <br><input type="button" value="44"><input type="button" value="47"></p>
+                <p id="clr"><b>color </b><br>
+                    <input type="color" name="black" cursor="pointer" class="button" readonly>black </p>
+                <p id="sze"><b>select size </b> <br>
+                  <input type="button" cursor="pointer" value="44" class="button">
+                  <input type="button" cursor="pointer" value="47" class="button"></p>
                 <br>
                 <button type="button" id="butn">
                     <b>ADD TO BAG</b>
@@ -101,6 +114,13 @@
                     and water resistance up to 300 meters or more. Its luminous hands and markers ensure visibility in low-light conditions,
                     while a precision automatic movement underscores its sophistication.
                     this timepiece seamlessly blends adventure-ready durability with upscale style.
+                    <ul style="font-size: 13px;">
+                        <li>Titanium made</li>
+                        <li>Sapphire crystal glass</li>
+                        <li>Water-resistant 300 meters</li>
+                        <li>Premium bezel</li>
+                        <li>10 Year Warrenty</li>
+                    </ul>
                 </p><hr>
             </div>
         </div>
@@ -126,7 +146,8 @@
           <div id="bottom-footer">© 2024 Sharker. All Rights Reserved.</div>
       </footer>
       <div class="add">
-        <img src="images/362-3621580_large-comic-conversation-bubble-vector-image-public-comic-text-cloud-png.png" alt="bubble" id="bubble">
+        <img src="images/rolexsubmariner/BUBBLE1.png" alt="bubble1" id="bubble1">
+          <img src="images/rolexsubmariner/BUBBLE2.png" alt="bubble2" id="bubble2">
         <img src="images/shark-clipart-kawaii-1.png" alt="shrk" id="shrk">
       </div>
 </body>
