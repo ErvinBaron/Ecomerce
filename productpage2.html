@@ -3,51 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scroll to Reveal</title>
+    <title>Input Hover to Change Image</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
+      .color-picker {
+        margin: 20px;
       }
 
-      .spacer {
-        height: 100vh; /* Creates scrollable space */
-        background: lightgray;
+      .image img {
+        width: 300px;
+        display: none;
       }
 
-      .hidden-div {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.5s ease, transform 0.5s ease;
+      .image img.default {
+        display: block; /* Default image is visible initially */
       }
 
-      .hidden-div.show {
-        opacity: 1;
-        transform: translateY(0);
+      .color-picker:hover ~ .image img.default {
+        display: none;
       }
 
-      .scroll-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .trigger {
-        height: 1px;
-        background: transparent;
+      .color-picker:hover ~ .image img.hover {
+        display: block;
       }
     </style>
-    <body>
-      <div class="spacer">Scroll down to see the magic!</div>
-
-      <div id="reveal" class="hidden-div">
-        <div class="content">
-          Hello! I appear when you scroll to this section.
-        </div>
-      </div>
-
-      <div class="spacer"></div>
-    </body>
   </head>
+  <body>
+    <!-- Input of type color -->
+    <input type="color" class="color-picker" />
+
+    <!-- Image outside of the container -->
+    <div class="image">
+      <img src="default-image.jpg" alt="Default Image" class="default" />
+      <img src="hover-image.jpg" alt="Hover Image" class="hover" />
+    </div>
+  </body>
 </html>

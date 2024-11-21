@@ -123,6 +123,23 @@ footer {
   height: auto;
   transition: trasnform 1.5s ease-out;
 }
+
+#blue:hover ~ #pic1 {
+  display: none;
+}
+
+#blue:hover ~ .part1 img.hover {
+  display: block;
+}
+
+.part1 img {
+  display: none;
+}
+
+.part1 img#pic1 {
+  display: block; /* Default image is visible initially */
+}
+
 .pic-section {
   display: flex;
   flex-direction: column;
@@ -171,4 +188,29 @@ footer {
   .layout {
     flex-direction: column;
   }
+}
+.add {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  position: fixed;
+  bottom: 5vh;
+  right: -5vw;
+  width: 10vw;
+  height: 10vw;
+  z-index: 5;
+  transition: transform 0.5s ease;
+}
+.add:hover {
+  transform: translateX(-100px);
+}
+#bubble {
+  width: 100%;
+  height: auto;
+  margin-bottom: -5vh;
+}
+#shrk {
+  width: 100%;
+  height: auto;
 }
