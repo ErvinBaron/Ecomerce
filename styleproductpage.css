@@ -122,21 +122,13 @@ footer {
   transition: trasnform 1.5s ease-out;
 }
 
-#blue:hover ~ #pic1 {
-  display: none;
-}
-
-#blue:hover ~ .part1 img.hover {
-  display: block;
-}
-
-.part1 img {
+/* .part1 img {
   display: none;
 }
 
 .part1 img#pic1 {
-  display: block; /* Default image is visible initially */
-}
+  display: block; /* Default image is visible initially 
+} */
 
 .pic-section {
   display: flex;
@@ -191,18 +183,72 @@ footer {
 .button:active {
   background: rgb(54, 143, 139);
 }
-
+.choose {
+  position: absolute;
+  right: 15vw;
+  top: calc(90px + 4vw);
+}
+@media (max-width: 1400px) {
+  .choose {
+    right: 20vw;
+    top: calc(90px + 2vw);
+  }
+}
+@media (max-width: 1200px) {
+  .choose {
+    right: 18vw;
+    top: calc(90px + 2vw);
+  }
+}
+@media (max-width: 1080px) {
+  .choose {
+    right: 16vw;
+    top: calc(90px + 4vw);
+  }
+}
+@media (max-width: 950px) {
+  .choose {
+    right: 15vw;
+  }
+}
+@media (max-width: 880px) {
+  .choose {
+    right: 14vw;
+  }
+}
+@media (max-width: 840px) {
+  .choose {
+    right: 13vw;
+  }
+}
+.hover {
+  display: none;
+}
+.choose:hover ~ #pic1 {
+  display: none;
+}
+.choose:hover ~ .hover {
+  display: block;
+  width: 45vw;
+  height: 22.5vw;
+}
 @media (max-width: 800px) {
   .layout {
     flex-direction: column;
     gap: 0;
     width: 80vw;
   }
-
-  #pic1 {
+  .choose {
+    position: absolute;
+    left: 2vw;
+    top: calc(90px + 87vw);
+  }
+  #pic1,
+  .choose:hover ~ .hover {
     width: 80vw;
     height: auto;
   }
+
   #pic2 {
     width: 40vw;
     height: auto;
