@@ -6,9 +6,6 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 0;
 }
-* {
-  /* border: rgb(255, 0, 0) 1px solid; */
-}
 nav {
   display: flex;
   align-items: center;
@@ -44,7 +41,7 @@ nav {
 }
 #center-bar {
   display: flex;
-  font-size: 30px;
+  font-size: 40px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   transition: transform 1s ease-out;
 }
@@ -102,30 +99,6 @@ a:visited {
 #heart {
   transition: transform 1s ease-out;
 }
-#anim {
-  height: 30px;
-  background: rgb(0, 0, 0);
-  border-radius: 30px;
-}
-#anim:hover input {
-  width: 200px;
-  background: white;
-}
-#anim input {
-  width: 0;
-  height: 30px;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  transition: 1.6s;
-  background: transparent;
-  color: transparent;
-  margin: auto;
-}
-#anim i .sea {
-  color: black;
-  font-size: 18px;
-}
 
 #item1,
 #item2,
@@ -137,6 +110,7 @@ a:visited {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 28px;
 }
 #watch1,
 #watch2,
@@ -161,17 +135,18 @@ footer {
   border-top: black 6px solid;
 }
 header {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: white;
   font-size: 35px;
   font-weight: bold;
   width: 100%;
   height: auto;
-  margin-left: 3vw;
-  margin-top: 1vw;
+  padding-left: 3vw;
+  padding: 1vw;
   /* border: red solid 1px; */
   position: relative;
-  top: calc(90px + 66vw);
+  top: calc(90px + 63vw);
   z-index: 5;
+  flex-grow: 1;
 }
 main {
   background-color: white;
@@ -240,7 +215,7 @@ main {
     justify-content: center;
   }
   header {
-    font-size: 24px;
+    font-size: 30px;
   }
   nav {
     width: 100%;
