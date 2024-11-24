@@ -230,7 +230,7 @@ nav {
 }
 #center-bar {
   display: flex;
-  font-size: 30px;
+  font-size: 40px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   transition: transform 1s ease-out;
 }
